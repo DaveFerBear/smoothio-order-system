@@ -1,0 +1,71 @@
+/* Import Fonts */
+@font-face {
+  font-family: "Oswald";
+  src: url(fonts/oswald.ttf) format("truetype");
+}
+
+/* Smoothio CSS */
+.smoothio-order-form {
+    text-align: left;
+}
+.smoothio-form-option {
+    padding: 10px;
+}
+.smoothio-form-submit {
+    text-align: center;
+}
+.smoothio-order-div {
+  /* commented out bg-dark class */
+  background-color: #B86997;
+  color: black;
+}
+.shape-container {
+  height: 500px;
+  width: 500px;
+}
+.background-img {
+  background-image: url(web_graphics/food-background.jpg);
+  background-size: 100%;
+}
+.title-text{
+  font-family: "Oswald";
+  font-size: 80px;
+  color: #FFFF;
+  /* -webkit-text-stroke: 3px black; */
+
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+.subtitle-text{
+  color: #FFFF;
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+}
+
+.left-h2 {
+  text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+ }
+
+ .right-h2 {
+  text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em black;
+ }
+
+img {
+  width: 100px;
+  margin: 30px;
+  visibility: hidden; /* Initially invisible */
+}
+
+/* Template CSS */
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }

@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Smoothio Order System</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+
+    <!-- Custom styles-->
+    <link href="order.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="order.js"></script>
+</head>
+
+<body>
+    <div class="background-img position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+        <div class="col-md-5 p-lg-5 mx-auto my-5">
+            <h1 class="display-4 font-weight-normal title-text">SMOOTHIO</h1>
+            <p class="lead font-weight-normal subtitle-text">Online Ordering System</p>
+        </div>
+    </div>
+
+    <div class="d-md-flex flex-md-equal w-100 my-md-3 pl-md-3">
+        <div class="mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden smoothio-order-div">
+            <div class="my-3 py-3">
+                <h2 class="display-5 left-h2">Your Order</h2>
+                <p class="lead">Customize Ingredients Below!</p>
+            </div>
+
+            <form name="orderForm" id="orderForm" style="padding-bottom: 30px">
+
+                <h5>Solid Food Options</h5>
+                <div class="
+                form-row" style="padding-bottom: 30px">
+                    <div class="col-4 form-check">
+                        <input class="form-check-input" type="checkbox" id="solid-dispense1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Strawberries
+                    </div>
+                    <div class="col-4 form-check">
+                        <input class="form-check-input" type="checkbox" id="solid-dispense2">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Blueberries
+                        </label>
+                    </div>
+                    <div class="col-4 form-check">
+                        <input class="form-check-input" type="checkbox" id="solid-dispense3">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Banana
+                        </label>
+                    </div>
+                </div>
+
+                <h5>Liquid Food Options</h5>
+                <div class="form-row" style="padding-bottom: 30px">
+                    <div class="col-4 form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="liquid-dispense1">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Orange Juice
+                    </div>
+                    <div class="col-4 form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="liquid-dispense2">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Cranberry Juice
+                        </label>
+                    </div>
+                    <div class="col-4 form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="liquid-dispense3">
+                        <label class="form-check-label" for="defaultCheck1">
+                            Yogurt
+                        </label>
+                    </div>
+                </div>
+
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon3">Secret Code</span>
+                    </div>
+                    <input type="text" class="form-control" id="secret-code" aria-describedby="basic-addon3">
+                </div>
+
+                <button class="btn btn-primary" id="submit-button" style="margin: 30px">Submit Order</button>
+
+            </form>
+
+        </div>
+        <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5 right-h2">Beverage Preview</h2>
+                <p class="lead">May be larger in real life.</p>
+            </div>
+            <div class="shape-container">
+                <img src="web_graphics/strawberry.png" id="img-strawberry">
+                <img src="web_graphics/blueberry.png" id="img-blueberry">
+                <img src="web_graphics/banana.png" id="img-banana">
+                <img src="web_graphics/orange.png" id="img-orange">
+                <img src="web_graphics/cranberry.png" id="img-cranberry">
+                <img src="web_graphics/yogurt.png" id="img-yogurt" style=”display:none”>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
