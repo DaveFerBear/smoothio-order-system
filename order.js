@@ -1,4 +1,4 @@
-const endpoint = "http://192.168.1.134:5000/enqueue";
+const endpoint = "http://172.20.10.2:5000/enqueue";
 
 function stripFormData() {
     var solidDispenseOptions = [false, false, false];
