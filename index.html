@@ -14,6 +14,8 @@
         crossorigin="anonymous">
 
     <!-- Custom styles-->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
     <link href="order.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="order.js"></script>
@@ -86,9 +88,9 @@
                     <input type="text" class="form-control" id="secret-code" aria-describedby="basic-addon3">
                 </div>
 
-                <button class="btn btn-primary" id="submit-button" style="margin: 30px">Submit Order</button>
-
+                <!-- <button class="btn btn-primary" id="submit-button" style="margin: 30px">Submit Order</button> -->
             </form>
+            <a href="https://172.20.10.2:5000/enqueue?solid=111&liquid=111&secret=test">CLICK ME</a>
 
         </div>
         <div class="bg-light mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
